@@ -22,7 +22,7 @@ class FirstUI extends StatelessWidget {
           children: [
             CachedNetworkImage(
               imageUrl:
-                  "https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?cs=srgb&dl=pexels-lood-goosen-508841-1235706.jpg&fm=jpg",
+                  "https://i.pinimg.com/1200x/09/6f/f7/096ff7fd728e880bca931a69a1417a5f.jpg",
               placeholder: (context, url) => CircularProgressIndicator(),
               errorWidget: (context, url, error) => Icon(Icons.error),
             ),
