@@ -13,6 +13,47 @@ class FirstUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              Container(
+                color: const Color.fromARGB(255, 121, 207,
+                    195), // You can style the Container as needed
+                child: DrawerHeader(
+                  child: Row(
+                    children: [
+                      Icon(Icons.tiktok),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Text("Tiktok"),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text('Home'),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.call),
+                title: Text('Contact'),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.email),
+                title: Text('Email'),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.support),
+                title: Text('Support'),
+                onTap: () {},
+              ),
+            ],
+          ),
+        ),
         appBar: AppBar(
           title: Text("Advanced UI - LAB 06 "),
           backgroundColor: const Color.fromARGB(255, 95, 2, 2),
@@ -30,7 +71,5 @@ class FirstUI extends StatelessWidget {
         ),
       ),
     );
-    // ),
-    //);
   }
 }
