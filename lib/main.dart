@@ -121,7 +121,7 @@ class _FirstUIState extends State<FirstUI> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.contact_mail),
-              label: 'Contact',
+              label: 'Contacts',
             ),
           ],
         ),
